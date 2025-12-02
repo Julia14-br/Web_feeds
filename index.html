@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Feeds Embebidos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f2f2f2;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .embed-box {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            min-height: 500px;
+        }
+        .btn-share {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    
+/* --- ESTILOS MEJORADOS Y BONITOS PARA LA PÁGINA --- */
+
+body {
+    background: #eef3f9;
+}
+
+.promo-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-left: 6px solid #1e90ff;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.promo-title {
+    margin-top: 0;
+    font-size: 26px;
+    color: #005bbb;
+}
+
+.promo-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.promo-modulos ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.promo-modulos li {
+    background: #e9f3ff;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    border-left: 4px solid #1e90ff;
+}
+
+/* Efectos */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Feeds Embebidos</h1>
+
+    <!-- PROMOCIÓN BACHILLERATO TÉCNICO - DISEÑO NUEVO -->
+    <section class="promo-box">
+        <h2 class="promo-title">🎓 Bachillerato Técnico en Informática</h2>
+        <p class="promo-text">
+            El Bachillerato Técnico en Informática es una formación moderna que combina tecnología,
+            creatividad y práctica real. Aquí desarrollarás habilidades para sobresalir en el mundo digital,
+            con módulos diseñados para prepararte profesionalmente desde el colegio.
+        </p>
+
+        <div class="promo-modulos">
+            <h3>Módulos que estudiarás</h3>
+            <ul>
+                <li><strong>SOR</strong> – Sistemas Operativos en Red</li>
+                <li><strong>AOLI</strong> – Aplicaciones Ofimáticas y Lenguajes de Interacción</li>
+                <li><strong>PBD</strong> – Programación y Bases de Datos</li>
+                <li><strong>ST</strong> – Soporte Técnico</li>
+                <li><strong>DDW</strong> – Diseño y Desarrollo Web</li>
+            </ul>
+        </div>
+
+        <p class="promo-text">
+            Si te gustan las computadoras, el diseño, la programación o las redes, esta especialidad
+            es para ti. Obtén una formación completa, práctica y con grandes oportunidades laborales.
+        </p>
+    </section>
+
+    
+
+    <!-- INSTAGRAM -->
+    <div class="embed-box">
+        <h2>Instagram</h2>
+        <!-- Feed Instagram Insertado -->
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DOHRU5KkkLu/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px; max-width:540px; min-width:326px; padding:0; width:calc(100% - 2px);">
+        </blockquote>
+        <script async src="https://www.instagram.com/embed.js"></script>
+        <button class="btn-share" onclick="window.open('https://www.instagram.com/p/DOHRU5KkkLu/','_self')">Compartir Instagram</button>
+    </div>
+
+    <!-- FACEBOOK FEED REDISEÑADO -->
+    <div class="embed-box" style="background:white; border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.1); padding:20px;">
+        <h2 style="margin-top:0; color:#1877f2;">Facebook</h2>
+
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjorgeabiatar.quevedofigueroa%2Fposts%2Fpfbid02AxCEpbpb1MrMTVd4YWwjy4StSnC3k2QJ2gGgkwnHxDMckL4d1TYV9b3MburzKABsl&show_text=true&width=500"
+                width="100%" height="600" style="border:none; overflow:hidden; border-radius:10px;"
+                scrolling="no" frameborder="0" allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+        <!-- Botón compartir Facebook -->
+        <button class="btn-share" style="background:#1877f2;" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/jorgeabiatar.quevedofigueroa/posts/pfbid02AxCEpbpb1MrMTVd4YWwjy4StSnC3k2QJ2gGgkwnHxDMckL4d1TYV9b3MburzKABsl','_self')">
+            Compartir Facebook
+        </button>
+    </div>
+    </div>
+</div>
+
+<script>
+function loadInstagram() {
+    document.getElementById('instaFrame').src = "https://www.instagram.com/p/Cx12345/embed";
+}
+function loadFacebook() {
+    document.getElementById('fbFrame').src = "https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/facebook/posts/10153231379946729";
+}
+</script>
+</body>
+</html>
